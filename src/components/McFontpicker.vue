@@ -141,7 +141,7 @@ export default {
           cased: this.localFonts[i].name.toLowerCase(),
           sane: this.localFonts[i].name
             .replaceAll(' ', '_')
-            .replaceAll(/[^a-zA-Z0-9-]/g, '')
+            .replaceAll(/[^a-zA-Z0-9-_]/g, '')
             .toLowerCase(),
           variants: this.localFonts[i].variants.map(v => {
             if (typeof v === 'string') {
